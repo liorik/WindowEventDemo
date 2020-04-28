@@ -1,7 +1,7 @@
 package windoweventdemo;
 import java.awt.*;        // using AWT containers and components
 import java.awt.event.*;  // using AWT events and listener interfaces
-import java.net.*;
+import java.io.*; 
 // An AWT GUI program inherits the top-level container java.awt.Frame
 public class WindowEventDemo extends Frame
       implements ActionListener, WindowListener {
@@ -25,6 +25,9 @@ public class WindowEventDemo extends Frame
       Button btnCount = new Button("Count");  // declare and allocate a Button
       add(btnCount);               // "this" Frame adds btnCount
  
+      Button btnClose = new Button("Close");
+      add(btnClose);
+      
       btnCount.addActionListener(this);
         // btnCount fires ActionEvent to its registered ActionEvent listener
         // btnCount adds "this" object as an ActionEvent listener
